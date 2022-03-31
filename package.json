@@ -4,6 +4,8 @@
   "description": "Arbitrage Crypto Trading Bot",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/fbenfraj/FrajBot/issues"
   },
-  "homepage": "https://github.com/fbenfraj/FrajBot#readme"
+  "homepage": "https://github.com/fbenfraj/FrajBot#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
