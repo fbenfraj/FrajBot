@@ -1,0 +1,25 @@
+{
+  "name": "frajbot",
+  "version": "1.0.0",
+  "description": "Arbitrage Crypto Trading Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbenfraj/FrajBot.git"
+  },
+  "keywords": [
+    "arbitrage",
+    "crypto",
+    "trading",
+    "bot"
+  ],
+  "author": "BEN FRAJ Farouk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fbenfraj/FrajBot/issues"
+  },
+  "homepage": "https://github.com/fbenfraj/FrajBot#readme"
+}
