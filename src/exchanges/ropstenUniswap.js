@@ -486,6 +486,7 @@ const uniswapAbi = [
     gas: 1713,
   },
 ];
+
 const uniswapAddress = "0xc0fc958f7108be4060F33a699a92d3ea49b0B5f0";
 const uniswapContract = new web3.eth.Contract(uniswapAbi, uniswapAddress);
 

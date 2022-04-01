@@ -1,9 +1,8 @@
 const web3 = require("./web3");
-const { uniswapContract } = require("./exchanges/uniswap");
+const { uniswapContract } = require("./exchanges/ropstenUniswap");
 
 const ETH_AMOUNT = web3.utils.toWei("1", "Ether");
 
-let priceMonitor;
 let monitoringPrice = false;
 
 async function monitorPrice() {
@@ -31,6 +30,13 @@ async function monitorPrice() {
   monitoringPrice = false;
 }
 
-module.exports = async function (args) {
-  return await monitorPrice(args);
+// Check markets every n seconds
+const POLLING_INTERVAL = process.env.POLLING_INTERVAL || 1000; // 1 Second
+
+const priceMonitor = () => {
+  setInterval(async () => {
+    await monitorPrice();
+  }, POLLING_INTERVAL);
 };
+
+module.exports = priceMonitor;
