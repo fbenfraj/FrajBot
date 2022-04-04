@@ -1,3 +1,3 @@
-const { swap } = require("./src/exchanges/mainUniswap");
+const { swap } = require("./src/exchanges/BSCpancakeswap");
 
 swap();
