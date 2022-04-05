@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/fbenfraj/FrajBot#readme",
   "dependencies": {
+    "@aave/protocol-v2": "^1.0.1",
     "@truffle/hdwallet-provider": "^2.0.4",
     "@uniswap/sdk": "^3.0.3",
     "dotenv": "^16.0.0",
