@@ -5,7 +5,7 @@ import "https://github.com/aave/aave-protocol/blob/master/contracts/configuratio
 import "https://github.com/aave/aave-protocol/blob/master/contracts/lendingpool/LendingPool.sol";
 import "https://github.com/aave/aave-protocol/blob/master/contracts/flashloan/base/FlashLoanReceiverBase.sol";
 
-contract Borrower is FlashLoanReceiverBase{
+contract AaveBorrower is FlashLoanReceiverBase{
     LendingPoolAddressesProvider provider;
     address dai;
 
